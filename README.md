@@ -1,7 +1,7 @@
 # DNVOD-AD-Block
 
 1. install ```uBlock``` plugin in your browser.
-2. go to the settings menu of ```uBlock``` and select ```My filters``` tab
+2. go to the settings menu of ```uBlock``` and select ```My filters``` Tab
 3. Paste the following content in the input block <br> 
 ```
   public.dnvod.tv/upload/public/*.jpg<br>
