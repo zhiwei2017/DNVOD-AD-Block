@@ -6,10 +6,11 @@
 ```
   public.dnvod.tv/upload/public/*.jpg<br>
 
-  http://s1-a1.dnvod.tv/vod/*
+  ! block all video type ads
+  http://s1-a1.dnvod.tv/*
 
   ! block the fucking ad images.
-  /http:\/\/\w+\.dnvod\.tv\/(?:\w+\/(?!video))+\d+(?:\w+)\.[jpg|JPG|gif|GIF]{1}/
+  /http:\/\/[\w|\-]+\.dnvod\.tv\/(?:\w+\/(?!video))+\d+(?:\w+)\.[jpg|JPG|gif|GIF]{1}/
 
   www.dnvod.tv###form1 > .main > .left > .dnpub.ggw-l
   www.dnvod.tv###form1 > .main > .left > .product > .dnpub.ggw-l
