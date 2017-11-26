@@ -20,6 +20,9 @@
   ! block the fucking side ads
   www.dnvod.tv##body > .whole > .dnpub 
 
+  ! block the ads container besides the player
+  www.dnvod.tv##body > .whole > .bfq > .bfq-l-2
+
   www.dnvod.tv##body > .dnpub 
 ```
 
