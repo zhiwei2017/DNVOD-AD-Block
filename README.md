@@ -4,14 +4,14 @@
 2. go to the settings menu of ```uBlock``` and select ```My filters``` Tab
 3. Paste the following content in the input block <br> 
 ```
-public.dnvod.tv/upload/public/*.jpg
+public.dnvod.tv/upload/public/*.jpg<br>
 
 ! block all video type ads
 http://s1-a1.dnvod.tv/*
 
 ! block the ad images, which is not in the same folder as the movie pictures
-!/http:\/\/[\w|\-]+\.dnvod\.tv\/(?:\w+\/(?!video))+\d+(?:\w+)\.(jpg|JPG|gif|GIF){1}/
-/http:\/\/[\w|\-]+\.dnvod\.tv\/(?:\w+\/(?!video))+\w+\.(jpg|JPG|gif|GIF){1}/
+!/http:\/\/[\w|\-]+\.dnvod\.tv\/(?:\w+\/(?!video)(?!av))+\d+(?:\w+)\.(jpg|JPG|gif|GIF){1}/
+/http:\/\/[\w|\-]+\.dnvod\.tv\/(?:\w+\/(?!video)(?!av))+\w+\.(jpg|JPG|gif|GIF){1}/
 
 ! block those ad images, which is in the same folder as the movie pictures
 /http:\/\/[\w|\-]+\.dnvod\.tv\/[\w+|\/]+\d+[a-zA-Z]+\.(JPG|GIF){1}/
@@ -32,6 +32,9 @@ www.dnvod.tv##div[data-code*="SSS"]
 
 ! block the popup
 www.dnvod.tv##div[data-type*="popup"]
+
+! block pop up
+www.dnvod.tv###_LC
 
 ! block stream ads
 www.dnvod.tv##div[data-code*="D"]
